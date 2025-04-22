@@ -1,4 +1,4 @@
-# Basic PHPknowledge
+# Basic PHPknowledge :woman_technologist:
 ## SQL tasks PostgreSQL
 package sql_tasks
 _Northwind database_
