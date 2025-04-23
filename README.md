@@ -1,6 +1,7 @@
 # Basic PHPknowledge :woman_technologist:
 ## SQL tasks PostgreSQL
-package sql_tasks
+📝 Package sql_tasks
+<br>
 _Northwind database_
 ### TASK1   
 Простый запросы
