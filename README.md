@@ -8,6 +8,6 @@ TASK1. Простый запросы
 <br>
 TASK2. Соединения
 <br>
-TASK3. Позапросы
+TASK3. Подзапросы
 <br>
-TASK4. (generateData) Индексы
+TASK4. Индексы
