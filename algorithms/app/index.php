@@ -99,16 +99,16 @@ $str3 = 'Лёша на полке клопа нашёл';
         <h3>Linear search:</h3>
         <?php
             $resultL = linearSearch($arr, $value, $step);
-            printRes($resultL, $step);
+            printResalt($resultL, $step);
             $resultL = linearSearch($words, $word, $step);
-            printRes($resultL, $step);
+            printResalt($resultL, $step);
         ?>
         <h3>Binary search:</h3>
         <?php
             $resultB = binarySearch($arr, $value, $step);
-            printRes($resultB, $step);
+            printResalt($resultB, $step);
             $resultB = binarySearch($words, $word, $step);
-            printRes($resultB, $step);
+            printResalt($resultB, $step);
         ?>
     </div>
 </div>
