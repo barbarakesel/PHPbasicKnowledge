@@ -12,6 +12,7 @@ $word = 'Ocean';
 $str1 = 'Привет Hello, World!';
 $str2 = '';
 $str3 = 'Лёша на полке клопа нашёл';
+$step = 0;
 ?>
 <!DOCTYPE html>
 <html>
