@@ -1,13 +1,15 @@
 <?php
 
-function simpleSort($arr)
+declare(strict_types=1);
+
+function simpleSort(array $arr): array
 {
     sort($arr);
 
     return $arr;
 }
 
-function bubbleSort($arr)
+function (array $arr): array
 {
     for ($i = 0; $i < count($arr); $i++) {
         for ($j = 0; $j < count($arr) - $i - 1; $j++) {
@@ -22,7 +24,7 @@ function bubbleSort($arr)
     return $arr;
 }
 
-function quickSort(array $arr)
+function quickSort(array $arr): array
 {
     if (count($arr) <= 1) {
         return $arr;
@@ -42,7 +44,7 @@ function quickSort(array $arr)
     return array_merge(quickSort($left), [$pivot], quickSort($right));
 }
 
-function printArray($array)
+function printArray($array)(array $array): void
 {
     echo implode(", ", $array);
     echo "<br>";
