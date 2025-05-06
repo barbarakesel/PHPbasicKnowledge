@@ -9,7 +9,7 @@ function arraySort(array $arr): array
     return $arr;
 }
 
-function (array $arr): array
+function bubbleSort(array $arr): array
 {
     for ($i = 0; $i < count($arr); $i++) {
         for ($j = 0; $j < count($arr) - $i - 1; $j++) {
@@ -44,7 +44,7 @@ function quickSort(array $arr): array
     return array_merge(quickSort($left), [$pivot], quickSort($right));
 }
 
-function printArray($array)(array $array): void
+function printArray(array $array): void
 {
     echo implode(", ", $array);
     echo "<br>";
