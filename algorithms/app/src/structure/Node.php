@@ -7,7 +7,7 @@ class Node
     public ?Node $next = null;
     public ?Node $prev = null;
 
-    public function __construct(mixed $value)
+    public function __construct(public mixed $value)
     {
     }
 }
