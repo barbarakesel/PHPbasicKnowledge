@@ -1,6 +1,8 @@
 <?php
 
-function linearSearch($arr, $value, &$step = 0)
+declare(strict_types=1);
+
+function linearSearch(array $arr, mixed $value, int &$step = 0): int
 {
     for ($i = 0; $i < count($arr); $i++) {
         $step++;
@@ -13,7 +15,7 @@ function linearSearch($arr, $value, &$step = 0)
     return -1;
 }
 
-function binarySearch($arr, $value, &$step = 0)
+function binarySearch(array $arr, mixed $value, int &$step = 0): int
 {
     sort($arr);
 
@@ -36,7 +38,7 @@ function binarySearch($arr, $value, &$step = 0)
     return -1;
 }
 
-function printRes($result, $step)
+function printResult(int $result, int $step): void
 {
     if ($result != -1) {
         echo "The key of the value is " . $result;
