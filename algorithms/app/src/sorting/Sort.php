@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-function simpleSort(array $arr): array
+function arraySort(array $arr): array
 {
     sort($arr);
 
