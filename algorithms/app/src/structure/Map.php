@@ -36,6 +36,20 @@ class Map
 
         throw new OutOfBoundsException("Key '$key' not found.");
     }
+    
+    private function findNodeByKey(string $key): ?object
+    {
+        $node = $this->head;
+    
+        while ($node !== null) {
+            if ($node->key === $key) {
+                return $node;
+            }
+            $node = $node->next;
+        }
+    
+        return null;
+    }
 
     public function remove(string $key): void
     {
