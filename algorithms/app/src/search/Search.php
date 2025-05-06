@@ -24,14 +24,14 @@ function binarySearch(array $arr, mixed $value, int &$step = 0): int
 
     while ($start <= $end) {
         $step++;
-        $med = floor(($start + $end) / 2);
+        $mid = floor(($start + $end) / 2);
 
-        if ($arr[$med] === $value) {
-            return $med;
-        } elseif ($arr[$med] > $value) {
-            $end = $med - 1;
-        } elseif ($arr[$med] < $value) {
-            $start = $med + 1;
+        if ($arr[$mid] === $value) {
+            return $mid;
+        } elseif ($arr[$mid] > $value) {
+            $end = $mid - 1;
+        } elseif ($arr[$mid] < $value) {
+            $start = $mid + 1;
         }
     }
 
