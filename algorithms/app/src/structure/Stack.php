@@ -1,8 +1,4 @@
 <?php
-$str1 = 'Привет Hello, World!';
-$str2 = '';
-$str3 = 'Лёша на полке клопа нашёл';
-
 function Stack($str)
 {
     $stack = new SplStack();
