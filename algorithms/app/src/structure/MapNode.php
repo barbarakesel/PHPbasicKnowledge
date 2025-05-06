@@ -1,13 +1,12 @@
 <?php
+
+declare(strict_types=1);
+
 class MapNode
 {
-    public string $key;
-    public mixed $value;
     public ?MapNode $next = null;
 
-    public function __construct(string $key, mixed $value)
+    public function __construct(public string $key, public mixed $value)
     {
-        $this->key = $key;
-        $this->value = $value;
     }
 }
