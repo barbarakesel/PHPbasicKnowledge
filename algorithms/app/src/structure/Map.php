@@ -1,18 +1,5 @@
 <?php
-class MapNode
-{
-    public string $key;
-    public mixed $value;
-    public ?MapNode $next = null;
-
-    public function __construct(string $key, mixed $value)
-    {
-        $this->key = $key;
-        $this->value = $value;
-    }
-}
-
-class MyMap
+class Map
 {
     private ?MapNode $head = null;
 
@@ -82,16 +69,3 @@ class MyMap
         return false;
     }
 }
-
-$map = new MyMap();
-$map->put('name', 'Maria');
-$map->put('age', 19);
-
-echo $map->get('name') . PHP_EOL;
-echo $map->get('age') . PHP_EOL;
-
-$map->put('name', 'Ivan');
-echo $map->get('name') . PHP_EOL;
-
-$map->remove('age');
-var_dump($map->has('age'));
